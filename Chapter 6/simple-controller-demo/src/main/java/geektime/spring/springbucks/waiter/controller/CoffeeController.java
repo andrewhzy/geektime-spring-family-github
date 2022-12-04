@@ -19,6 +19,6 @@ public class CoffeeController {
     @GetMapping("/")
     @ResponseBody
     public List<Coffee> getAll() {
-        return coffeeService.getAllCoffee();
+        return coffeeService.getAllCoffees();
     }
 }

@@ -15,7 +15,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class,
+@SpringBootApplication(exclude = {
+        DataSourceAutoConfiguration.class,
         DataSourceTransactionManagerAutoConfiguration.class,
         JdbcTemplateAutoConfiguration.class})
 @Slf4j
